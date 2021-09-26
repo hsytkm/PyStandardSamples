@@ -10,10 +10,4 @@
 // プリコンパイルするヘッダーをここに追加します
 #include "framework.h"
 
-#ifdef TESTLIB_EXPORTS
-#define TESTLIB_API extern "C" __declspec(dllexport)
-#else
-#define TESTLIB_API extern "C" __declspec(dllimport)
-#endif
-
 #endif //PCH_H
